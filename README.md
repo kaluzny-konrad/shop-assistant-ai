@@ -1,0 +1,4 @@
+
+# Techstack
+
+- Supabase + Postgres + pgvector
