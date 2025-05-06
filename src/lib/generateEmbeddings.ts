@@ -12,8 +12,9 @@ async function generateEmbeddings() {
     const input = document.replace(/\n/g, " ");
 
     const embeddingResponse = await openAi.embeddings.create({
-      model: "text-embedding-ada-002",
+      model: "text-embedding-3-small",
       input,
+      encoding_format: "float",
     });
 
     const [{ embedding }] = embeddingResponse.data;
